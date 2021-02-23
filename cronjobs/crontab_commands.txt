@@ -1,0 +1,15 @@
+1)crontab -e
+
+Ex:
+# m h  dom mon dow   command
+
+#* * * * * python3 file_name.py
+* * * * * path_to_python_annaconda file_name.py       
+
+Note:Path to python in annaconda can be found using conda env list and then moving to /envs/required_env/bin
+
+For virtual env,
+python3 -m venv venv
+. venv/bin/activate
+install required libs
+use this venv instead of conda env
